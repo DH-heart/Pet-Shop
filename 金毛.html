@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimun-scale=1.0,maximun-scale=1.0">
+
+		<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"  type="text/javascript"></script>
+			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js" type="text/javascript"></script>
+		<![endif]-->
+
+		<script src="jquery-2.1.4/jquery.min.js" type="text/javascript"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
+
+		<style type="text/css">
+			body {
+				color: #8E8E8E;
+			}
+			
+			.navbar {
+				border: none;
+				background: #dea32c;
+			}
+			
+			.navbar li a {
+				color: #FFFFFF !important;
+			}
+			
+			.navbar li a:hover {
+				color: #986733!important;
+				background-color: #FFFFFF !important;
+			}
+			
+			.jumbotron {
+				height: 700px;
+				width: 100%;
+			}
+			
+			.hf {
+				color: #986733;
+				margin: 200px 400px;
+			}
+			
+			.img-responsive {
+				width: 150px;
+				height: 150px;
+			}
+			
+			.img-responsive1 {
+				width: 500px;
+				height: 500px;
+			}
+			
+			.footer {
+				color: #FFFFFF;
+				margin-top: 100px;
+				background: #986733;
+			}
+			
+			.logo {
+				padding-top: 10px;
+				padding-left: 20px;
+				color: #FFFFFF;
+			}
+			
+			.logo1 {
+				color: yellow;
+			}
+			
+			.H3 {
+				color: #dea32c;
+				padding-left: 50px;
+			}
+			
+			.p0 {
+				text-indent: 2em;
+				font-size: 15px;
+				line-height: 25px;
+				letter-spacing: 5px;
+			}
+			
+			.p1 {
+				padding-left: 100px;
+			}
+			.p6{
+				text-align: center;
+				color: #dea32c;
+			}
+			.box1 {
+				width: 80px;
+				height: 50px;
+				background: #986733;
+			}
+			
+			.box2 {
+				width: 80px;
+				height: 50px;
+				background: #905a3d;
+			}
+			
+			.blog-grid1 {
+				padding-top: 430px;
+			}
+			
+			.btn-lg {
+				margin-top: 10px;
+				margin-left: 200px;
+				margin-bottom: 50px;
+			}
+			
+			.btn1 {
+				padding: 10px 20px;
+				background: #000000;
+				color: #FFFFFF;
+				border-radius: 0;
+				transition: 1s;
+			}
+			
+			#button {
+				padding: 10px 20px;
+				background: #dea32c;
+				color: #FFFFFF;
+				border-radius: 0;
+			}
+			
+			#button:hover {
+				padding: 10px 20px;
+				background: #FFFFFF;
+				color: #dea32c;
+				border-radius: 0;
+				transition: 1s;
+			}
+			
+			.nation {
+				margin-left: 500px;
+			}
+			
+			.pagination li a {
+				color: #dea32c;
+			}
+			
+			 ::selection {
+				background: #dea32c;
+				color: #FFFFFF;
+			}
+			.fade{
+				margin-top:50px ;
+			}
+			.modal-header,
+			.modal-body {
+				padding: 40px 50px;
+			}
+			
+			.modal-header,
+			.modal-header h4,
+			.close {
+				background-color: #333333;
+				color: #FFFFFF;
+				text-align: center;
+				font-size: 30px;
+			}
+			.img1{
+				text-align:center
+			}
+			.modal-body,
+			.modal-footer {
+				background-color: #FFFFFF;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--navbar-->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class=" navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="首页.html">
+						<font color="#ffffff">首页</font>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="金毛.html">
+								金毛寻回犬
+							</a>
+						</li>
+						<li>
+							<a href="哈士奇.html" data-toggle="tooltip"data-placement="bottom" title="点击查看详情">
+								西伯利亚雪橇犬
+							</a>
+						</li>
+						<li>
+							<a href="拉布拉多.html"data-toggle="tooltip"data-placement="bottom" title="点击查看详情">
+								拉布拉多猎犬
+							</a>
+						</li>
+						<li>
+							<form class="navbar-form navbar-right">
+								<div class="form-group">
+									<input type="txtPassWrd" class="form-control" placeholder="搜索你喜欢的犬种" />
+								</div>
+								<button type="button" class="btn btn-warning ">
+								   <span class="glyphicon glyphicon-search"></span>
+								</button>
+							</form>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!--jumbotron-->
+		<div class="jumbotron" style="background-image: url(img/62.jpg);">
+			<div class="ju-box ">
+				<h2 class="hf">金毛寻回犬</h2>
+			</div>
+		</div>
+		
+		
+		
+		<div class="container-fluid">
+			<div class="accordion" id="accordion2">
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<p class="p6">点击查看介绍</p>
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+							<div class="img1"><img  src="img/down.svg"></div>
+						</a>
+					</div>
+					<div id="collapseOne" class="accordion-body collapse" style="height: 0px; ">
+						<div class="accordion-inner">
+							<p class="p0">金毛犬（英语：Golden Retriever）是比较现代并很流行的狗的品种，是单猎犬，作为用来在猎捕野禽的寻回犬而培养出来的，游泳的续航力极佳。 它是最常见的家犬之一，因为它很容易养，有耐心并且对主人要求不多，只要定期的运动，食物和兽医体检就可以了。 金毛的独特之处在于它讨人喜欢的性格，是属于匀称、有力、活泼的一个犬种，特征是稳固、身体各部位配合合理，腿既不太长也不笨拙，表情友善，个性热情、机警、自信而且不怕生。 金毛犬最早是一种寻回猎犬。现在大多作为导盲犬与宠物狗。对小孩子或者婴儿十分友善。金毛犬是位列世界犬种智商排行的第四名。源自苏格兰的金毛寻回犬能够风靡世人，当然除了它一身金黄色的被毛吸引众生外，同时也因它们天生温驯的个性，令人对它爱不释手。 要追溯金毛寻回犬的历史，大概要穿梭到1865年的时候，那时苏格兰流行打猎，因此擅于捕猎野生动物的中型犬种就大受狩猎家欢迎。
+							</P>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+			
+		
+		
+		
+		
+
+		<!--blog-->
+		<div class="blog">
+			<div class="container">
+				<div class="blog-top">
+					<div class="col-md-2">
+						<div>
+							<div class="text-blog">
+								<h3 class="H3">22 &nbsp; Jun</h3>
+								<p class="p1">2017</p>
+							</div>
+
+							<ul>
+								<div class="box1">
+									<p>
+										<font color="#ffffff">1</font><i class="glyphicon glyphicon-calendar logo" style="font-size: 30px"></i>
+									</p>
+								</div>
+								<div class="box2">
+									<p>
+										<i class="glyphicon glyphicon-heart logo" style="font-size: 30px"></i>
+									</p>
+								</div>
+							</ul>
+						</div>
+
+						<div class=" blog-grid1">
+							<div class="text-blog">
+								<h3 class="H3">11&nbsp; Jun</h3>
+								<p class="p1">2017</p>
+							</div>
+							<ul>
+								<div class="box1">
+									<p>
+										<font color="#ffffff">1</font><i class="glyphicon glyphicon-calendar logo" style="font-size: 30px"></i>
+									</p>
+								</div>
+								<div class="box2">
+									<p>
+										<i class="glyphicon glyphicon-heart logo" style="font-size: 30px"></i>
+									</p>
+								</div>
+							</ul>
+						</div>
+
+						<div class=" blog-grid1">
+							<div class="text-blog">
+								<h3 class="H3">15&nbsp; Jun</h3>
+								<p class="p1">2017</p>
+							</div>
+							<ul>
+								<div class="box1">
+									<p>
+										<font color="#ffffff">1</font><i class="glyphicon glyphicon-calendar logo" style="font-size: 30px"></i>
+									</p>
+								</div>
+								<div class="box2">
+									<p>
+										<i class="glyphicon glyphicon-heart logo" style="font-size: 30px ; "></i>
+									</p>
+								</div>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-7 blog-grid">
+						<div class="blog-grid3">
+							<div class=" blog-grid2">
+								<a href="single.html"><img src="img/jin2.jpg" class="img-responsive1" alt=""></a>
+								<div class="blog-text">
+									<h5>这是一只天真无邪的幼犬，充满好奇心。</h5>
+									<p>它今年1岁了，却还是对外界的事物充满好奇心，无论走到哪，都不顾一切的便冲上去一探究竟。</p>
+								</div>
+								<button id="button" class="btn2 btn-default" data-toggle="modal" data-target="#myModal">购买</button>
+
+								<div class="modal fade" id="myModal">
+									<div class="modal-dialog">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4> <span class="glyphicon glyphicon-lock"></span>购物单</h4>
+										</div>
+										<div class="modal-body">
+											<form>
+												<div class="form-group">
+													<label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span>你需要支付的金额</label>
+													<input type="number" class="form-control" id="psw" placeholder="多少钱?">
+												</div>
+												<div class="form-group">
+													<label for="psw"><span class="glyphicon glyphicon-shopping-user"></span>发送给</label>
+													<input type="number" class="form-control" id="usrname" placeholder="电子邮箱">
+												</div>
+												<button type="submit" class="btn1 btn-block">支付
+												<span class="glyphicon glyphicon-ok"></span>							
+												</button>
+											</form>
+										</div>
+										<div class="modal-footer">
+											<button type="submit" class="btn1 btn-danger pull-left" data-dismiss=" modal">
+						<span class="glyphicon glyphicon-remove"></span>取消
+					</button>
+											<P>需要
+												<a href="#">帮助?</a>
+											</P>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="blog-grid3">
+							<div class=" blog-grid2">
+								<a href="#"><img src="img/jin5.jpg" class="img-responsive1" alt=""></a>
+								<div class="blog-text">
+									<h5>可不要被它忧郁的眼神所迷惑。</h5>
+									<p>它看似懒散其实它的内心里可是住着一个“小恶魔”，话说回来它其实是一个成熟稳重的大男孩。</p>
+								</div>
+								<button id="button" class="btn2btn-default" data-toggle="modal" data-target="#myModal">购买</button>
+								<div class="modal fade" id="myModal">
+									<div class="modal-dialog">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4> <span class="glyphicon glyphicon-lock"></span>购物单</h4>
+										</div>
+										<div class="modal-body">
+											<form>
+												<div class="form-group">
+													<label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span>你需要支付的金额</label>
+													<input type="number" class="form-control" id="psw" placeholder="多少钱?">
+												</div>
+												<div class="form-group">
+													<label for="psw"><span class="glyphicon glyphicon-shopping-user"></span>发送给</label>
+													<input type="number" class="form-control" id="usrname" placeholder="电子邮箱">
+												</div>
+												<button type="submit" class="btn1 btn-block">支付
+												<span class="glyphicon glyphicon-ok"></span>							
+												</button>
+											</form>
+										</div>
+										<div class="modal-footer">
+											<button type="submit" class="btn1 btn-danger pull-left" data-dismiss=" modal">
+											<span class="glyphicon glyphicon-remove"></span>取消
+											</button>
+											<P>需要
+												<a href="#">帮助?</a>
+											</P>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class=" blog-grid2">
+							<a href="#"><img src="img/jin8.jpg" class="img-responsive1" alt=""></a>
+							<div class="blog-text">
+								<h5>想必大家都看的出来它可不是一位宅男</h5>
+								<p>它从小就爱闯荡，在家里你可关不住它，如果有爱运动的主人快速速前来把它带走，我已经快被它累死了。(o^.^o)</p>
+							</div>
+							<button id="button" class="btn2 btn-default" data-toggle="modal" data-target="#myModal">购买</button>
+							<div class="modal fade" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4> <span class="glyphicon glyphicon-lock"></span>购物单</h4>
+									</div>
+									<div class="modal-body">
+										<form>
+											<div class="form-group">
+												<label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span>你需要支付的金额</label>
+												<input type="number" class="form-control" id="psw" placeholder="多少钱?">
+											</div>
+											<div class="form-group">
+												<label for="psw"><span class="glyphicon glyphicon-shopping-user"></span>发送给</label>
+												<input type="number" class="form-control" id="usrname" placeholder="电子邮箱">
+											</div>
+											<button type="submit" class="btn1 btn-block">支付
+											<span class="glyphicon glyphicon-ok"></span>							
+											</button>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button type="submit" class="btn1 btn-danger pull-left" data-dismiss=" modal">
+										<span class="glyphicon glyphicon-remove"></span>取消
+										</button>
+										<P>需要
+											<a href="#">帮助?</a>
+										</P>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 categories-grid">
+						<div class="blog-bottom">
+							<h4>买家评论</h4>
+							<div class="product-go">
+								<a href="#" class="fashion"><img class="img-responsive " src="img/jin4.jpg" alt=""></a>
+								<div class="grid-product">
+									<a href="#" class="elit">高山流水</a>
+									<p>我愿陪它看朝起朝落</p>
+								</div>
+							</div>
+							<div class="product-go">
+								<a href="#" class="fashion"><img class="img-responsive" src="img/jin6.jpg" alt=""></a>
+								<div class="grid-product">
+									<a href="#" class="elit">过眼云烟</a>
+									<p>它非常喜欢到公园与我游戏</p>
+								</div>
+							</div>
+							<div class="product-go">
+								<a href="#" class="fashion"><img class="img-responsive " src="img/jin3.jpg" alt=""></a>
+								<div class="grid-product">
+									<a href="#" class="elit">沧海桑田</a>
+									<p>它最喜欢游泳了今天我们来到了....</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="nation">
+			<ul class="pagination pagination-lg">
+				<li>
+					<a href="#">&laquo;</a>
+				</li>
+				<li >
+					<a href="#">1</a>
+				</li>
+				<li>
+					<a href="#">2</a>
+				</li>
+				<li>
+					<a href="#">3</a>
+				</li>
+				<li>
+					<a href="#">4</a>
+				</li>
+				<li>
+					<a href="#">5</a>
+				</li>
+				<li>
+					<a href="#">6</a>
+				</li>
+				<li>
+					<a href="#">7</a>
+				</li>
+				<li>
+					<a href="#">8</a>
+				</li>
+				<li>
+					<a href="#">&raquo;</a>
+				</li>
+			</ul>
+		</div>
+
+		<!--footer-->
+		<div class="footer">
+			<div class="container">
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-2">
+					<h3>关于我们</h3>
+					<p><span class="logo1">&raquo;</span>店家</p>
+					<p><span class="logo1">&raquo;</span>资料</p>
+					<p><span class="logo1">&raquo;</span>服务</p>
+					<p><span class="logo1">&raquo;</span>团队 </p>
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-2">
+					<h3>加入</h3>
+					<p><span class="logo1">&raquo;</span>论坛</p>
+					<p><span class="logo1">&raquo;</span>促销</p>
+				</div>
+				<div class="col-md-2">
+					<h3>忠告</h3>
+					<p><span class="logo1">&raquo;</span>常见问题解答</p>
+					<P><span class="logo1">&raquo;</span>帐号</P>
+					<p><span class="logo1">&raquo;</span>联系</p>
+				</div>
+				<div class="col-md-4 ">
+					<h3>联系我们：</h3>
+					<p><span class="glyphicon glyphicon-phone logo1"></span>&nbsp;电话：156415456355</p>
+					<p><span class="glyphicon glyphicon-envelope logo1"></span> &nbsp;电子邮箱mycwd@12306.com</p>
+				</div>
+			</div>
+		</div>
+
+		<!--javascript-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("a").bind("transitionend", function() {
+					alert("yans")
+				});
+			});
+			
+			 $(function () { $("[data-toggle='tooltip']").tooltip(); });
+		</script>
+	</body>
+
+</html>

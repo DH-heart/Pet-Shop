@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimun-scale=1.0,maximun-scale=1.0">
+
+		<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"  type="text/javascript"></script>
+			<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js" type="text/javascript"></script>
+		<![endif]-->
+
+		<script src="jquery-2.1.4/jquery.min.js" type="text/javascript"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
+
+		<style type="text/css">
+			body {
+				color: #8E8E8E;
+			}
+			
+			.navbar {
+				border: none;
+				background: #3e4145;
+			}
+			
+			.navbar li a {
+				color: #FFFFFF !important;
+			}
+			
+			.navbar li a:hover {
+				color: #3e4145!important;
+				background-color: #FFFFFF !important;
+			}
+			
+			.img1 {
+				height: 400px;
+			}
+			
+			.img2 {
+				height: 400px;
+			}
+			
+			.jumbotron {
+				height: 700px;
+				width: 100%;
+			}
+			
+			::selection {
+				background: #3e4145;
+				color: #f6f5ec;
+			}
+			
+			.footer {
+				color: #FFFFFF;
+				margin-top: 200px;
+				background: #3e4145;
+			}
+			
+			.hf {
+				margin-left: 250px;
+				margin-top: 300px;
+			}
+			
+			.img4 {
+				text-align: center;
+			}
+			
+			.p0 {
+				text-indent: 2em;
+				font-size: 15px;
+				line-height: 25px;
+				letter-spacing: 5px;
+			}
+			
+			.p1 {
+				color: #5CB85C;
+			}
+			
+			.p2 {
+				color: #5582B3;
+			}
+			
+			.p3 {
+				color: #33a3dc;
+			}
+			
+			.p4 {
+				color: orange;
+			}
+			
+			.p5 {
+				color: red;
+			}
+			
+			.p6 {
+				text-align: center;
+				color: #3e4145;
+			}
+			
+			.btn1 {
+				padding: 10px 20px;
+				background: #3e4145;
+				color: #FFFFFF;
+				border-radius: 0;
+				transition: 1s;
+			}
+			
+			.btn {
+				border: none;
+				background: #3e4145;
+			}
+			
+			.footer-body {
+				padding: 50px;
+			}
+			
+			.modal-header,
+			.modal-body {
+				padding: 40px 50px;
+			}
+			
+			.modal-header,
+			.modal-header h4,
+			.close {
+				background-color: #333333;
+				color: #FFFFFF;
+				text-align: center;
+				font-size: 30px;
+			}
+			
+			.modal-body,
+			.modal-footer {
+				background-color: #FFFFFF;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--navbar-->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class=" navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a class="navbar-brand" href="首页.html">
+						<font color="#ffffff">首页</font>
+					</a>
+
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="金毛.html" data-toggle="tooltip" data-placement="left" title="点击查看详情">
+								金毛寻回犬
+							</a>
+						</li>
+						<li>
+							<a href="哈士奇.html" data-toggle="tooltip" data-placement="bottom" title="点击查看详情">
+								西伯利亚雪橇犬
+							</a>
+						</li>
+						<li>
+							<a href="拉布拉多.html">拉布拉多猎犬
+							</a>
+						</li>
+						<li>
+							<form class="navbar-form navbar-right">
+								<div class="form-group">
+									<input type="txtPassWrd" class="form-control" placeholder="搜索你喜欢的犬种" />
+								</div>
+								<button type="button" class="btn btn-warning">
+								   <span class="glyphicon glyphicon-search"></span>
+								</button>
+							</form>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!--jumbotron-->
+		<div class="jumbotron" style="background-image: url(img/44.jpg);">
+			<div class="ju-box ">
+				<h2 class="hf">拉布拉多猎犬</h2>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="accordion" id="accordion2">
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<p class="p6">点击查看介绍</p>
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+							<div class="img4"><img src="img/down.svg"></div>
+						</a>
+					</div>
+					<div id="collapseOne" class="accordion-body collapse" style="height: 0px; ">
+						<div class="accordion-inner">
+							<p class="p0">拉布拉多寻回犬因原产地在加拿大的纽芬兰与拉布拉多省而得名。拉布拉多寻回犬是一种大型犬类， 个性忠诚、大气、憨厚、温和、阳光、 开朗、活泼，智商极高， 也对人很友善，是非常适合被选作经常出入公共场合的导盲犬或地铁警犬及搜救犬和其他工作犬的狗品种， 跟西伯利亚雪撬犬和金毛寻回犬并列三大无攻击性犬类，拉布拉多智商位列世界犬类第六位。 拉布拉多猎犬有四种颜色，分别为：黑色、黄色、巧克力、米白色。最常见的是黑色，黄色。 在美国犬业俱乐部中拉布拉多是目前登记数量最多的品种，对小孩尤其的友善，对犬主人略粘人。
+							</P>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="myCollapsibleExample">
+			<a href="#demo" data-toggle="collapse">
+
+			</a>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5">
+					<h3>小名：蹦蹦</h3>
+					<img class="img1" src="img/la1.jpg">
+				</div>
+				<div class="box002">
+					<div class="col-sm-7">
+						<h3>各项属性</h3>
+						<p>
+							<p class="p1">活泼度</p>
+							<div class="progress progress-striped">
+								<div class="progress-bar progress-bar-success" style="width: 80%"></div>
+							</div>
+							<p class="p2">温顺度</p>
+							<div class="progress progress-striped">
+								<div class="progress-bar progress-bar-bar" style="width: 70%"></div>
+							</div>
+							<p class="p3">聪慧度</p>
+							<div class="progress progress-striped">
+								<div class="progress-bar progress-bar-info" style="width: 50%"></div>
+							</div>
+							<p class="p4">可爱度</p>
+							<div class="progress progress-striped">
+								<div class="progress-bar progress-bar-warning" style="width: 40%"></div>
+							</div>
+							<p class="p5">忠诚度</p>
+							<div class="progress progress-striped">
+								<div class="progress-bar progress-bar-danger" style="width: 90%"></div>
+							</div>
+							<button class="btn1 btn-default" data-toggle="modal" data-target="#myModal">购买</button>
+
+							<div class="modal fade" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4> <span class="glyphicon glyphicon-lock"></span>购物单</h4>
+									</div>
+									<div class="modal-body">
+										<form>
+											<div class="form-group">
+												<label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span>你需要支付的金额</label>
+												<input type="number" class="form-control" id="psw" placeholder="多少钱?">
+											</div>
+											<div class="form-group">
+												<label for="psw"><span class="glyphicon glyphicon-shopping-user"></span>发送给</label>
+												<input type="number" class="form-control" id="usrname" placeholder="电子邮箱">
+											</div>
+											<button type="submit" class="btn1 btn-block">支付
+						<span class="glyphicon glyphicon-ok"></span>							
+						</button>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button type="submit" class="btn1 btn-danger pull-left" data-dismiss=" modal">
+						<span class="glyphicon glyphicon-remove"></span>取消
+					</button>
+										<P>需要
+											<a href="#">帮助?</a>
+										</P>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div><br>
+			<div class="row row1">
+				<div class="col-sm-6 box003">
+					<h3>各项属性</h3>
+					<p>
+						<p class="p1">活泼度</p>
+						<div class="progress progress-striped">
+							<div class="progress-bar progress-bar-success" style="width: 60%"></div>
+						</div>
+						<p class="p2">温顺度</p>
+						<div class="progress progress-striped">
+							<div class="progress-bar progress-bar-bar" style="width: 80%"></div>
+						</div>
+						<p class="p3">聪慧度</p>
+						<div class="progress progress-striped">
+							<div class="progress-bar progress-bar-info" style="width: 70%"></div>
+						</div>
+						<p class="p4">可爱度</p>
+						<div class="progress progress-striped">
+							<div class="progress-bar progress-bar-warning" style="width: 90%"></div>
+						</div>
+						<p class="p5">忠诚度</p>
+						<div class="progress progress-striped">
+							<div class="progress-bar progress-bar-danger" style="width: 50%"></div>
+						</div>
+						<button class="btn1 btn-default" data-toggle="modal" data-target="#myModal">购买</button>
+
+						<div class="modal fade" id="myModal">
+							<div class="modal-dialog">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4> <span class="glyphicon glyphicon-lock"></span>购物单</h4>
+								</div>
+								<div class="modal-body">
+									<form>
+										<div class="form-group">
+											<label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span>你需要支付的金额</label>
+											<input type="number" class="form-control" id="psw" placeholder="多少钱?">
+										</div>
+										<div class="form-group">
+											<label for="psw"><span class="glyphicon glyphicon-shopping-user"></span>发送给</label>
+											<input type="number" class="form-control" id="usrname" placeholder="电子邮箱">
+										</div>
+										<button type="submit" class="btn1 btn-block">支付
+						<span class="glyphicon glyphicon-ok"></span>							
+						</button>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button type="submit" class="btn1 btn-danger pull-left" data-dismiss=" modal">
+						<span class="glyphicon glyphicon-remove"></span>取消
+					</button>
+									<P>需要
+										<a href="#">帮助?</a>
+									</P>
+								</div>
+							</div>
+						</div>
+
+				</div>
+				<div class="box004">
+					<div class="col-sm-6">
+						<h3>小名：多多</h3>
+						<img class="img2" src="img/la3.jpg">
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!--footer-->
+		<div class="footer">
+			<div class="container">
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-2">
+					<h3>关于我们</h3>
+					<p><span class="logo">&raquo;</span>店家</p>
+					<p><span class="logo">&raquo;</span>资料</p>
+					<p><span class="logo">&raquo;</span>服务</p>
+					<p><span class="logo">&raquo;</span>团队 </p>
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-2">
+					<h3>加入</h3>
+					<p><span class="logo">&raquo;</span>论坛</p>
+					<p><span class="logo">&raquo;</span>促销</p>
+				</div>
+				<div class="col-md-2">
+					<h3>忠告</h3>
+					<p><span class="logo">&raquo;</span>常见问题解答</p>
+					<P><span class="logo">&raquo;</span>帐号</P>
+					<p><span class="logo">&raquo;</span>联系</p>
+				</div>
+				<div class="col-md-4 ">
+					<h3>联系我们：</h3>
+					<p><span class="glyphicon glyphicon-phone logo"></span>&nbsp;电话：156415456355</p>
+					<p><span class="glyphicon glyphicon-envelope logo"></span> &nbsp;电子邮箱mycwd@12306.com</p>
+				</div>
+			</div>
+		</div>
+
+		<!--javascript-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("a").bind("transitionend", function() {
+					alert("yans")
+				});
+			});
+
+			$(function() {
+				$("[data-toggle='tooltip']").tooltip();
+			});
+		</script>
+	</body>
+
+</html>
